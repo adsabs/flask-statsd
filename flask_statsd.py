@@ -39,3 +39,6 @@ class StatsD(object):
 
     def gauge(self, *args, **kwargs):
         return self.statsd.gauge(*args, **kwargs)
+
+    def set(self, *args, **kwargs):
+        return self.statsd.set(*args, **kwargs)
